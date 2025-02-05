@@ -15,8 +15,6 @@ mod array;
 pub mod binary;
 #[cfg(feature = "bitwise")]
 mod bitwise;
-mod builder_dsl;
-pub use builder_dsl::*;
 #[cfg(feature = "temporal")]
 pub mod dt;
 mod expr;
@@ -30,7 +28,7 @@ mod meta;
 mod name;
 mod options;
 #[cfg(feature = "python")]
-pub mod python_dsl;
+pub mod python_udf;
 #[cfg(feature = "random")]
 mod random;
 mod selector;
